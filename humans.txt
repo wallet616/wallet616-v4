@@ -1,0 +1,26 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+
+/* TEAM */
+
+	Your Title: wallet616 - Piotr Bartela
+	Site: http://wallet616.eu/
+	Steam: http://steamcommunity.com/id/wallet616/
+	Location: Poland, Lodz
+
+
+
+/* THANKS */
+					
+	Name: No one.
+
+
+
+/* SITE */
+
+	Last update: 2016/08/04
+	Standards: HTML5, CSS3
+	Components: jQuery, jQueryUI
+	Software: AptanaStudio, Photoshop CC

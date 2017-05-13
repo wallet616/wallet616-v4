@@ -1,0 +1,348 @@
+/*
+ * Main
+ */
+html, body, #background {
+	min-width: 500px !important;
+	min-height: 500px !important;
+	overflow: hidden;
+}
+html, body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	font-size: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body {
+	background-color: #000;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #D7D7D7;
+}
+
+a:hover {
+	color: #FFF;
+	cursor: pointer;
+}
+
+a {
+	-webkit-transition: all 0.4s;
+    -khtml-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#background {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+
+.nyet {
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*
+ * Grid layout
+ */
+.content {
+	max-width: 900px;
+	min-width: 500px !important;
+	margin: auto;
+}
+
+.brick-1, .brick-2, .brick-3, .brick-4, .brick-5, .brick-6, .brick-7, .brick-8 {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	text-align: center;
+}
+
+.brick-1 {
+	width: 12.5%;
+}
+
+.brick-2 {
+	width: 25%;
+}
+
+.brick-3 {
+	width: 37.5%;
+}
+
+.brick-4 {
+	width: 50%;
+}
+
+.brick-5 {
+	width: 62.5%;
+}
+
+.brick-6 {
+	width: 75%;
+}
+
+.brick-7 {
+	width: 87.5%;
+}
+
+.brick-8 {
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+#content {
+	position: relative;
+	z-index: 50;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+/*
+ * Bar
+ */
+#bar {
+	position: fixed;
+	top: 40%;
+	right: 5px;
+	width: 40px;
+	height: 150px;
+	z-index: 100;
+}
+
+.bar_square {
+	margin-bottom: 12px;
+	margin-top: 2px;
+	transform:rotate(45deg); 
+	-webkit-transform:rotate(45deg); 
+	-moz-transform:rotate(45deg); 
+	-o-transform:rotate(45deg); 
+	cursor: pointer;
+	background: #292929;
+	width: 22px;
+	height: 22px;
+	margin-left: 4px;
+}
+
+.bar_square_center {
+	position: absolute;
+	margin-left: 4px;
+	margin-top: 4px;
+	cursor: pointer;
+	background: #292929;
+	width: 14px;
+	height: 14px;
+	-webkit-transition: all 1.5s;
+    -khtml-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.bar_dot {
+	margin-bottom: 10px;
+	transform:rotate(45deg); 
+	-webkit-transform:rotate(45deg); 
+	-moz-transform:rotate(45deg); 
+	-o-transform:rotate(45deg);
+	background: #292929;
+	width: 4px;
+	height: 4px;
+	margin-left: 13px;
+}
+
+/*
+ * Contetn layout
+ */
+#logoScene {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 20;
+}
+
+#aboutScene {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 20;
+	left: -100%;
+}
+
+#galeryScene {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 20;
+	left: 100%;
+	top: -200%;
+}
+
+/*
+ * About
+ */
+#about > .brick-2 > h1 {
+	font-size: 80px;
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	width: 400px;
+	padding-bottom: 100px;
+	color: #F2F2F2;
+}
+
+#about > .brick-6 > h2 {
+	font-size: 46px;
+	text-align: left;
+	color: #EBEBEB;
+	font-weight: normal;
+	margin: 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+#about > .brick-6 > h3 {
+	font-size: 26px;
+	text-align: left;
+	color: #E3E3E3;
+	font-weight: normal;
+	margin: -5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#about > .brick-6 > h4 {
+	font-size: 16px;
+	text-align: left;
+	color: #D7D7D7;
+	font-weight: normal;
+	margin: -5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+article p {
+	font-size: 20px;
+	color: #F2F2F2;
+	text-align: left;
+}
+
+.contact {
+	text-align: right;
+	font-size: 18px;
+	margin-right: 13px;
+	position: relative;
+	z-index: 30;
+}
+
+.contact li {
+	list-style: none;
+	color: #D7D7D7;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+    -khtml-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.hovered {
+	display: inline-block;
+	width: 0px;
+	margin-bottom: 4px;
+	margin-left: 2px;
+	-webkit-transition: all 0.4s;
+    -khtml-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+	border-bottom: thin #D7D7D7 solid;
+}
+
+.contact li:hover {
+	color: #FFF;
+}
+
+.contact li:hover > .hovered {
+	width: 30px;
+}
+
+/*
+ * Galeria
+ */
+#galery > .brick-2 > h1 {
+	font-size: 80px;
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	width: 480px;
+	padding-bottom: 228px;
+	padding-left: 30px;
+	color: #F2F2F2;
+}
+
+.galery-hiding{
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+
+.galery-image {
+	width: 100%;
+	height: 100%;
+}
+
+#galery_description {
+	padding-left: 10px;
+	padding-top: 85px;
+}
+
+#galery_description h2 {
+	display: block;
+	font-size: 26px;
+	letter-spacing: 2px;
+	padding: 0px 10px 5px 0px;
+	font-weight: normal;
+	text-align: left;
+	color: #E3E3E3;
+	margin: 0px;
+}
+
+#galery_description h3 {
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 4px 0px;
+	font-weight: normal;
+	text-align: left;
+	color: #F2F2F2;
+	margin: -5px 0px 0px 0px;
+}
+
+#galery_description > section p {
+	font-size: 16px;
+	color: #F2F2F2;
+	text-align: left;
+}
+
